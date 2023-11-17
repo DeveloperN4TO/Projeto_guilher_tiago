@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.register.Register1Fragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            app:navigationIcon="@drawable/ic_toolbar">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cadastro"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="90dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="123dp"
+                android:layout_height="123dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nike2"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnEditPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_add_foto"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:layout_marginStart="40dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicione uma foto"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"
+                android:paddingStart="20dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textColor="@color/black_light"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/editName"
+                style="@style/Style_edit_recupera_senha_email"
+                android:hint="Fulano da Silva"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/grey_light"
+                android:inputType="text"
+                android:textColor="@color/grey_light"
+                tools:ignore="RtlSymmetry" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/black_light"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                style="@style/Style_edit_recupera_senha_email"
+                android:hint="mail@mail.com"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/grey_light"
+                android:inputType="text"
+                android:textColor="@color/grey_light"
+                tools:ignore="RtlSymmetry" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone"
+                android:textColor="@color/black_light"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+
+            <EditText
+                android:id="@+id/editPhone"
+                style="@style/Style_edit_recupera_senha_email"
+                android:hint="(00) 00000-0000"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/grey_light"
+                android:inputType="phone"
+                android:textColor="@color/grey_light"
+                tools:ignore="RtlSymmetry" />
+
+
+            <Space
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF"
+                android:textColor="@color/black_light"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/editCPF"
+                style="@style/Style_edit_recupera_senha_email"
+                android:hint="000.000.000-00"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/grey_light"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grey_light"
+                tools:ignore="RtlSymmetry" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data de nascimento"
+                android:textColor="@color/black_light"
+                android:layout_gravity="start"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/editNiver"
+                style="@style/Style_edit_recupera_senha_email"
+                android:hint="00/00/0000"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/grey_light"
+                android:inputType="number"
+                android:textColor="@color/grey_light"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:orientation="vertical"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        style="@style/Style_checkbox"
+                        android:layout_gravity="start|bottom"
+                        android:gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toEndOf="@+id/checkbox1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_gravity="center|bottom"
+                        android:textColor="@color/grey_light"
+                        android:text="Declaro que concordo e aceito os"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:id="@+id/irTermUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Termos de uso"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/grey_dark"
+                        android:gravity="center|start"
+                        android:layout_gravity="bottom"
+                        app:layout_constraintStart_toEndOf="@+id/txt1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/irPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e Politicas de Privacidade."
+                    android:textColor="@color/grey_dark"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="40dp"
+                    android:gravity="center|start"/>
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ir_cadastro2"
+                style="@style/Style_edit_recupera_senha_email"
+                android:background="@drawable/background_button"
+                android:text="Continuar"
+                android:textColor="@color/white"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.core.widget.NestedScrollView>

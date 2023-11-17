@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/imgTokens"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Style_edit_token"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/second1_input_digit"
+                style="@style/style_edit_token2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:maxLength="1"
+                android:text=""
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Style_edit_token"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/second_input_digit"
+                style="@style/style_edit_token2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:maxLength="1"
+                android:text=""
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout3"
+            style="@style/Style_edit_token"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintEnd_toStartOf="@+id/layout4"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/third_input_digit"
+                style="@style/style_edit_token2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:maxLength="1"
+                android:text=""
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout4"
+            style="@style/Style_edit_token"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/layout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout3"
+            app:layout_constraintTop_toTopOf="@+id/layout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fourth_input_digit"
+                style="@style/style_edit_token2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:maxLength="1"
+                android:text=""
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
